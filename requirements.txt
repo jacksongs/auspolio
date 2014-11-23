@@ -1,5 +1,5 @@
 Django==1.6.8
--e git://github.com/jacksongs/drum/tree/politics-fork#egg=Drum-master
+-e git://github.com/jacksongs/drum#egg=politics-fork
 Fabric==1.10.0
 Mezzanine==3.1.10
 Pillow==2.6.1
