@@ -1,1 +1,3 @@
 */5 * * * * %(user)s %(manage)s poll_rss http://www.canberratimes.com.au/rssheadlines/federal-politics/article/rss.xml --follow
+*/5 * * * * %(user)s %(manage)s poll_rss http://www.reddit.com/r/AusPol/.rss --follow
+*/5 * * * * %(user)s %(manage)s poll_rss http://theconversation.com/au/topics/australian-politics/articles.rss --follow
