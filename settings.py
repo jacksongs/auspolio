@@ -93,7 +93,7 @@ MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["auspol.io","128.199.178.62"]
+ALLOWED_HOSTS = ["pressgallery.net"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -312,7 +312,7 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 
 # Drum-specific Mezzanine settings
 AUTH_PROFILE_MODULE = "links.Profile"
-SITE_TITLE = "AusPol.io"
+SITE_TITLE = "Press Gallery"
 RATINGS_RANGE = (-1, 1)
 RATINGS_ACCOUNT_REQUIRED = True
 COMMENTS_ACCOUNT_REQUIRED = True
