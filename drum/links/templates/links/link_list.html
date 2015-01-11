@@ -11,11 +11,9 @@
 <div class="link-item clearfix">
     {% if not profile_user %}{% rating_for link %}{% endif %}
     <div class="link-detail{% if link.rating_sum < 0 %} link-negative{% endif %}">
-        <h2>
-            <a href="{{ link.url }}">{{ link.title }}</a>
-            <span class="domain">({{ link.domain }})</span>
-        </h2>
-        by <a class="profile" href="{% url "profile" link.user.username %}">{{ link.user.profile }}</a>
+        <strong><a href="{{ link.url }}">{{ link.title }}</a></strong>
+        <p>{{ link.description }} </p>
+        by <a class="profile" href="{% url "profile" link.user.username %}">{{ link.user.profile }}</a> <span class="domain">- {{ link.domain }}</span> | 
         {{ link.publish_date|short_timesince }} ago |
         {% keywords_for link as tags %}
         {% for tag in tags %}

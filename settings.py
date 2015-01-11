@@ -380,3 +380,30 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
+#### EXTRA MODEL FIELDS
+
+EXTRA_MODEL_FIELDS = (
+    (
+        "links.models.Links.description",
+        "TextField", # 'django.db.models.' is implied if path is omitted.
+        ("Description",),
+        {"blank": True, "default": "N/A"},
+    ),
+    (
+        "links.models.Links.description",
+        "TextField", # 'django.db.models.' is implied if path is omitted.
+        ("Description",),
+        {"blank": True, "default": "N/A"},
+    ),
+)
+
+##### RESTRICTIONS FOR ACCOUNTS_PROFILE_VIEWS_ENABLED
+
+ACCOUNTS_PROFILE_FORM_EXCLUDE_FIELDS =     (
+    "first_name",
+    "last_name",
+    "signup_date",
+    "website",
+    "bio"
+)
